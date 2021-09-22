@@ -15,7 +15,10 @@ function calculateScore(){
         }
         index = index + 1;
     }
-   output.innerText = `Your score is ${score}`
+    if(index == 6)
+        output.innerText = `Your score is ${score}`;
+    else
+        output.innerText = "Please answer all the questions and submit again";
 }
 
 
