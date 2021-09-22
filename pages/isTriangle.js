@@ -14,7 +14,9 @@ function isTriangle(angleOne, angleTwo, angleThree)
         showMessage("Oh Oh! The angle doesn't form a triangle")
     }
 }
-
+function showMessage(msg){
+    output.innerText = msg;
+}
 
 check.addEventListener("click", function(){
     if(inputAngle[0].value && inputAngle[1].value && inputAngle[2].value)
@@ -38,6 +40,4 @@ check.addEventListener("click", function(){
     
 })
 
-function showMessage(msg){
-    output.innerHTML = msg;
-}
+
